@@ -51,7 +51,7 @@ services:
   # Sidekiq
   worker: &rails
     restart: always
-    image: ualbertalib/jupiter:deployment
+    image: ualbertalib/jupiter:uat-fixing-rollback
     command: bundle exec sidekiq
     env_file: .env_deployment
     depends_on:
